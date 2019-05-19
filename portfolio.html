@@ -4,46 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Open+Sans:300" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Open+Sans:300"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body>
     <header>
-        <div class="container">
-          <div class="name"><h1>Bored Kitty</h1></div>
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <img src="images/icon1.png" width="100px" />
+        <a class="navbar-brand" href="#">Bored Kitty</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >About <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-info" type="submit">
+              Search
+            </button>
+          </form>
         </div>
+      </nav>
     </header>
 
     <main>
-      <div class="wrapper">
-        <h2>Portfolio</h2>
-        <hr />
-        <div class="allProjects">
-        <div class="projects">
-          <a href="#">project1</a>
+      <div class="container mb-5">
+        <div class="row"><h1>Portfolio</h1></div>
+        <div class="row">
+          <div class="col-md-1 col-sm-12"></div>
+          <div class="col-md-10 col-sm-12">
+            <div class="row  pb-4">
+              <div class="col-md-5 col-sm-12">
+                <div class="card bg-secondary text-center">
+                  <img src="images/pr1.png" class="card-img " alt="..." />
+                  <div class="card-img-overlay position-relative pt-0"></div>
+                  <a href="#" class="text-light text-decoration-none">
+                    <h5 class="card-title ">Kitty gardening</h5>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="card bg-secondary text-center">
+                  <img src="images/pr4.jpg" class="card-img" alt="..." />
+                  <div class="card-img-overlay position-relative pt-0"></div>
+                  <a href="#" class="text-light text-decoration-none">
+                    <h5 class="card-title">Kitty workout</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-12"></div>
         </div>
-        <div class="projects">
-            <a href="#">project2</a>
+        <div class="row">
+          <div class="col-md-1 col-sm-12"></div>
+          <div class="col-md-10 col-sm-12">
+            <div class="row">
+              <div class="col-md-5 col-sm-12">
+                <div class="card bg-secondary text-center">
+                  <img src="images/pr3.jpg" class="card-img" alt="..." />
+                  <div class="card-img-overlay position-relative pt-0"></div>
+                  <a href="#" class="text-light text-decoration-none"
+                    ><h5 class="card-title">Purrfect scratches</h5></a
+                  >
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="card bg-secondary text-center">
+                  <img src="images/pr2.jpg" class="card-img" alt="..." />
+
+                  <div class="card-img-overlay position-relative pt-0"></div>
+                  
+                    <h5 class="card-title"> <a href="#" class="text-light text-decoration-none">Mechanical kitty</a></h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-12"></div>
         </div>
-        <div class="projects">
-            <a href="#">project3</a>
-        </div>
-        <div class="projects">
-            <a href="#">project4</a>
-        </div>
+        <div class="col-md-1 col-sm-12"></div>
       </div>
-    </div>
     </main>
 
-    <footer><p>Copyright &#169</p></footer>
+    <div class="footer-margin">
+      <footer
+        class="card-footer bg-info footer-font-style text-light footer-position"
+      >
+        Copyright &#169;
+      </footer>
+    </div>
   </body>
 </html>
