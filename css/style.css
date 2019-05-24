@@ -8,3 +8,19 @@ footer {
   margin-top: 100px;
   text-align: center;
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .white-box {
+    text-align: center;
+  }
+  .white-box span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .white-box {
+    display: flex;
+    justify-content: center;
+  }
+}
